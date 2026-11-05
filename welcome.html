@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rahila's Birthday Surprise — Unlock</title><link rel="stylesheet" href="css/style.css"></head>
+<body><div id="floating"></div><div id="toast"></div>
+<section id="login"><div class="login-card">
+ <div class="login-card">
+  <span class="bow">🎀💗🎂</span><div class="eyebrow">A little surprise is waiting</div>
+  <h1>Hey, Rahila!</h1>
+  <p class="sub">A little world has been made just for you. Enter your secret password to unlock your birthday surprise. ♡</p>
+  <input id="password" type="password" placeholder="Enter your secret password" autocomplete="off">
+  <button class="btn" style="width:100%" onclick="unlock()">Enter Surprise ✨</button>
+  <div id="error"></div>
+  <p style="font-family:'Playfair Display';font-size:19px;color:#a96d99;margin:15px 0 4px">Something special is waiting for you… 💌</p>
+  </div>
+  <p style="font-size:11px;color:#b09aab;margin-bottom:0">Made with love, only for the birthday girl ♡</p>
+ </div>
+</div></section>
+<script src="js/script.js"></script>
+<script>
+function unlock(){if(document.getElementById('password').value===SECRET_PASSWORD){window.location.href='index.html';}else{document.getElementById('error').textContent='Oops! Wrong password. Try again, birthday girl 💗';}}
+document.getElementById('password').addEventListener('keydown',e=>{if(e.key==='Enter')unlock()});
+</script></body></html>

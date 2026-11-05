@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rahila's 22nd Birthday Surprise — Our Story</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="floating"></div><div id="toast"></div>
+<header class="standalone-header">
+  <a class="brand" href="index.html" style="text-decoration:none">For <span>Rahila</span> ♡</a>
+  <nav aria-label="Birthday pages"><a class="nav-link" href="index.html">Home</a>
+<a class="nav-link" href="memories.html">Memories</a>
+<a class="nav-link" href="photos.html">Photos</a>
+<a class="nav-link" href="videos.html">Videos</a>
+<a class="nav-link" href="story.html">Our Story</a>
+<a class="nav-link" href="reasons.html">Reasons</a>
+<a class="nav-link" href="letters.html">Letters</a>
+<a class="nav-link" href="gifts.html">Gifts</a>
+<a class="nav-link" href="fun.html">Fun Zone</a>
+<a class="nav-link" href="wishes.html">Wishes</a>
+<a class="nav-link" href="final.html">Final Surprise</a></nav>
+</header>
+<main class="standalone-main">
+<section class="page-content" id="timeline">
+<div class="section-title"><h2>Our friendship timeline ⏳</h2><p>Edit these moments and dates to match your real story.</p></div><div class="timeline">
+ <div class="event"><small>THE BEGINNING</small><h3>When we first met 🌸</h3><p>One little moment that started a friendship I treasure.</p></div>
+ <div class="event"><small>THE LAUGHTER</small><h3>Our funniest memory 😂</h3><p>That one moment we still remember and laugh about.</p></div>
+ <div class="event"><small>THE SUPPORT</small><h3>Always there for each other 🤍</h3><p>Through good days and difficult ones, we kept cheering each other on.</p></div>
+ <div class="event"><small>THE NEXT CHAPTER</small><h3>More memories to make ✨</h3><p>This friendship story is nowhere near its last page.</p></div>
+ </div>
+</section>
+<div class="page-nav">
+  <a class="btn secondary" href="videos.html">← Back to Video Memories</a>
+  <div class="step-label">PAGE 5 OF 11</div>
+  <a class="btn" href="reasons.html">Why You're Special 💖</a>
+</div>
+</main>
+<footer>Made with endless love, just for Rahila Kousar ♡</footer>
+<script src="js/script.js"></script>
+<script>
+(function(){
+  makeHearts();
+  const activeHref = "story.html";
+  document.querySelectorAll('nav a').forEach(a=>{if(a.getAttribute('href')===activeHref){a.classList.add('active')}});
+})();
+</script>
+</body>
+</html>

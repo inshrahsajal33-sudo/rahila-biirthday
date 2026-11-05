@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rahila's 22nd Birthday Surprise — Gifts</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="floating"></div><div id="toast"></div>
+<header class="standalone-header">
+  <a class="brand" href="index.html" style="text-decoration:none">For <span>Rahila</span> ♡</a>
+  <nav aria-label="Birthday pages"><a class="nav-link" href="index.html">Home</a>
+<a class="nav-link" href="memories.html">Memories</a>
+<a class="nav-link" href="photos.html">Photos</a>
+<a class="nav-link" href="videos.html">Videos</a>
+<a class="nav-link" href="story.html">Our Story</a>
+<a class="nav-link" href="reasons.html">Reasons</a>
+<a class="nav-link" href="letters.html">Letters</a>
+<a class="nav-link" href="gifts.html">Gifts</a>
+<a class="nav-link" href="fun.html">Fun Zone</a>
+<a class="nav-link" href="wishes.html">Wishes</a>
+<a class="nav-link" href="final.html">Final Surprise</a></nav>
+</header>
+<main class="standalone-main">
+<section class="page-content" id="gifts">
+<div class="section-title"><h2>Mystery gift boxes 🎁</h2><p>Tap each present to discover a little surprise.</p></div><div class="gift-grid">
+ <button class="gift" onclick="gift(0)">🎁<span>Gift 1</span></button><button class="gift" onclick="gift(1)">🎀<span>Gift 2</span></button><button class="gift" onclick="gift(2)">💝<span>Gift 3</span></button><button class="gift" onclick="gift(3)">🧸<span>Gift 4</span></button><button class="gift" onclick="gift(4)">🌷<span>Gift 5</span></button>
+ </div><div class="reveal" id="giftReveal">Your surprises are waiting… 💗</div>
+ <div class="section-title"><h2>Rahila Times 📰</h2><p>Today's top headline from the birthday desk.</p></div><div class="note" style="text-align:center;background:linear-gradient(145deg,#fffdf6,#fff3f7)"><div class="eyebrow">The Best Friend Gazette • Special Birthday Edition</div><h2 style="font-size:clamp(30px,6vw,48px);margin:12px 0">BREAKING NEWS!</h2><h3 style="font-size:25px">RAHILA KOUSAR TURNS 22! 👑</h3><p>Sources confirm that the birthday queen is officially more fabulous, more iconic and more loved than ever. Celebrations are encouraged worldwide. Experts predict a year full of happiness, success, laughter and unforgettable memories.</p><p style="font-family:'Great Vibes';font-size:32px;color:#b66c95">Extra! Extra! Read all about her! ♡</p></div>
+</section>
+<div class="page-nav">
+  <a class="btn secondary" href="letters.html">← Back to Secret Letters</a>
+  <div class="step-label">PAGE 8 OF 11</div>
+  <a class="btn" href="fun.html">Enter the Bestie Fun Zone 🎮</a>
+</div>
+</main>
+<footer>Made with endless love, just for Rahila Kousar ♡</footer>
+<script src="js/script.js"></script>
+<script>
+(function(){
+  makeHearts();
+  const activeHref = "gifts.html";
+  document.querySelectorAll('nav a').forEach(a=>{if(a.getAttribute('href')===activeHref){a.classList.add('active')}});
+})();
+</script>
+</body>
+</html>

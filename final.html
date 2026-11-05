@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rahila's 22nd Birthday Surprise — Final Surprise</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="floating"></div><div id="toast"></div>
+<header class="standalone-header">
+  <a class="brand" href="index.html" style="text-decoration:none">For <span>Rahila</span> ♡</a>
+  <nav aria-label="Birthday pages"><a class="nav-link" href="index.html">Home</a>
+<a class="nav-link" href="memories.html">Memories</a>
+<a class="nav-link" href="photos.html">Photos</a>
+<a class="nav-link" href="videos.html">Videos</a>
+<a class="nav-link" href="story.html">Our Story</a>
+<a class="nav-link" href="reasons.html">Reasons</a>
+<a class="nav-link" href="letters.html">Letters</a>
+<a class="nav-link" href="gifts.html">Gifts</a>
+<a class="nav-link" href="fun.html">Fun Zone</a>
+<a class="nav-link" href="wishes.html">Wishes</a>
+<a class="nav-link" href="final.html">Final Surprise</a></nav>
+</header>
+<main class="standalone-main">
+<section class="page-content" id="final">
+<div class="section-title"><h2>One last surprise… 🎁</h2><p>You've explored the birthday wonderland. Here's one more little gift.</p></div><div class="secret"><div style="font-size:56px">💝</div><h2 style="color:#795b7c">You thought it was over? 🥹</h2><p style="line-height:1.9;color:#806d7e">No matter where life takes us, I hope you always know that you have someone cheering for you, believing in you, and wishing the very best for you. Thank you for being my person. Here's to you, Rahila — today and always!</p><button class="btn" onclick="finale()">Open your final hug 🤗</button><p id="finalText" style="font-weight:700;color:#bd6e98"></p></div>
+</section>
+<div class="page-nav">
+  <a class="btn secondary" href="wishes.html">← Back to Birthday Wishes</a>
+  <div class="step-label">PAGE 11 OF 11 • THE END</div>
+  <a class="btn" href="index.html">Back to Home ♡</a>
+</div>
+</main>
+<footer>Made with endless love, just for Rahila Kousar ♡</footer>
+<script src="js/script.js"></script>
+<script>
+(function(){
+  makeHearts();
+  const activeHref = "final.html";
+  document.querySelectorAll('nav a').forEach(a=>{if(a.getAttribute('href')===activeHref){a.classList.add('active')}});
+})();
+</script>
+</body>
+</html>

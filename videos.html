@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rahila's 22nd Birthday Surprise — Videos</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+/* Video Gallery */
+
+.video-gallery {
+    width: 100%;
+    max-width: 1150px;
+    margin: 30px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.video-card {
+    background: #fff;
+    padding: 10px;
+    border-radius: 22px;
+    box-shadow: 0 12px 30px rgba(150, 90, 140, 0.12);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+}
+
+.video-card video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: block;
+    object-fit: contain;
+    border-radius: 13px;
+    background: #ead8eb;
+}
+
+.video-card p {
+    margin: 15px 5px 8px;
+    font-family: Georgia, serif;
+    font-size: 17px;
+    color: #a45e88;
+}
+
+.video-ending {
+    text-align: center;
+    margin: 50px 15px 25px;
+    font-family: Georgia, serif;
+    font-size: 26px;
+    color: #a45e88;
+}
+
+/* Tablet */
+
+@media (max-width: 850px) {
+    .video-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 550px) {
+    .video-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .video-gallery {
+        padding: 0 15px;
+    }
+
+    .video-ending {
+        font-size: 21px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div id="floating"></div>
+<div id="toast"></div>
+
+<!-- Header -->
+
+<header class="standalone-header">
+
+<a class="brand" href="index.html" style="text-decoration:none">
+    For <span>Rahila</span> ♡
+</a>
+
+<nav aria-label="Birthday pages">
+    <a class="nav-link" href="index.html">Home</a>
+    <a class="nav-link" href="memories.html">Memories</a>
+    <a class="nav-link" href="photos.html">Photos</a>
+    <a class="nav-link active" href="videos.html">Videos</a>
+    <a class="nav-link" href="story.html">Our Story</a>
+    <a class="nav-link" href="reasons.html">Reasons</a>
+    <a class="nav-link" href="letters.html">Letters</a>
+    <a class="nav-link" href="gifts.html">Gifts</a>
+    <a class="nav-link" href="fun.html">Fun Zone</a>
+    <a class="nav-link" href="wishes.html">Wishes</a>
+    <a class="nav-link" href="final.html">Final Surprise</a>
+</nav>
+
+</header>
+
+<!-- Main Content -->
+
+<main class="standalone-main">
+
+<section class="page-content" id="videos">
+
+    <div class="section-title">
+        <h2>Our video memories 🎬</h2>
+        <p>Our beautiful memories together ❤️</p>
+    </div>
+
+    <div class="video-gallery">
+
+        <div class="video-grid">
+
+            <!-- Video 1 -->
+
+            <div class="video-card">
+
+                <video
+                    controls
+                    playsinline
+                    preload="metadata"
+                    poster="photos/vedio1.svg">
+
+                    <source
+                        src="videos/vedio1.mp4"
+                        type="video/mp4">
+
+                    Your browser does not support video playback.
+
+                </video>
+
+                <p>Our funniest moments 😂</p>
+
+            </div>
+
+
+            <!-- Video 2 -->
+
+            <div class="video-card">
+
+                <video
+                    controls
+                    playsinline
+                    preload="metadata"
+                    poster="photos/vedio2.svg">
+
+                    <source
+                        src="videos/vedio2.mp4"
+                        type="video/mp4">
+
+                    Your browser does not support video playback.
+
+                </video>
+
+                <p>Little memories together 💗</p>
+
+            </div>
+
+
+            <!-- Video 3 -->
+
+            <div class="video-card">
+
+                <video
+                    controls
+                    playsinline
+                    preload="metadata"
+                    poster="photos/vedio3.svg">
+
+                    <source
+                        src="videos/vedio3.mp4"
+                        type="video/mp4">
+
+                    Your browser does not support video playback.
+
+                </video>
+
+                <p>A moment to replay ✨</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <p class="video-ending">
+        Some memories are too good to be just photographs. ❤️
+    </p>
+
+</section>
+
+
+<!-- Page Navigation -->
+
+<div class="page-nav">
+
+    <a class="btn secondary" href="photos.html">
+        ← Back to Photo Gallery
+    </a>
+
+    <div class="step-label">PAGE 4 OF 11</div>
+
+    <a class="btn" href="story.html">
+        Discover Our Story 🌷
+    </a>
+
+</div>
+
+</main>
+
+<!-- Footer -->
+
+<footer>
+    Made with endless love, just for Rahila Kousar ♡
+</footer>
+
+<script src="js/script.js"></script>
+
+<script>
+(function() {
+    makeHearts();
+
+    const activeHref = "videos.html";
+
+    document.querySelectorAll('nav a').forEach(a => {
+        if (a.getAttribute('href') === activeHref) {
+            a.classList.add('active');
+        }
+    });
+})();
+</script>
+
+</body>
+</html>

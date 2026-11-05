@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rahila's 22nd Birthday Surprise — Memories</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="floating"></div><div id="toast"></div>
+<header class="standalone-header">
+  <a class="brand" href="index.html" style="text-decoration:none">For <span>Rahila</span> ♡</a>
+  <nav aria-label="Birthday pages"><a class="nav-link" href="index.html">Home</a>
+<a class="nav-link" href="memories.html">Memories</a>
+<a class="nav-link" href="photos.html">Photos</a>
+<a class="nav-link" href="videos.html">Videos</a>
+<a class="nav-link" href="story.html">Our Story</a>
+<a class="nav-link" href="reasons.html">Reasons</a>
+<a class="nav-link" href="letters.html">Letters</a>
+<a class="nav-link" href="gifts.html">Gifts</a>
+<a class="nav-link" href="fun.html">Fun Zone</a>
+<a class="nav-link" href="wishes.html">Wishes</a>
+<a class="nav-link" href="final.html">Final Surprise</a></nav>
+</header>
+<main class="standalone-main">
+<section class="page-content" id="memories">
+<div class="section-title"><h2>Our little memory lane 📸</h2><p>Some moments deserve to be kept forever.</p></div><div class="cards">
+ <div class="card"><div class="emoji">😂</div><h3>Our silly moments</h3><p>All those random laughs, silly jokes, and moments when we couldn't stop laughing. I hope we never run out of these.</p></div>
+ <div class="card"><div class="emoji">☕</div><h3>Our long conversations</h3><p>From important talks to the most random topics — every conversation with you is a favourite.</p></div>
+ <div class="card"><div class="emoji">🤍</div><h3>Being there</h3><p>Thank you for the times we supported each other. Those little moments mean more than words can say.</p></div>
+ <div class="card"><div class="emoji">✨</div><h3>More to come</h3><p>Our story is still being written. I can't wait for all the new memories and adventures ahead.</p></div>
+ </div><p class="quote">“The best memories are even better when they're made with you.”</p>
+</section>
+<div class="page-nav">
+  <a class="btn secondary" href="index.html">← Back to Birthday Home</a>
+  <div class="step-label">PAGE 2 OF 11</div>
+  <a class="btn" href="photos.html">Relive Our Moments 📸</a>
+</div>
+</main>
+<footer>Made with endless love, just for Rahila Kousar ♡</footer>
+<script src="js/script.js"></script>
+<script>
+(function(){
+  makeHearts();
+  const activeHref = "memories.html";
+  document.querySelectorAll('nav a').forEach(a=>{if(a.getAttribute('href')===activeHref){a.classList.add('active')}});
+})();
+</script>
+</body>
+</html>
